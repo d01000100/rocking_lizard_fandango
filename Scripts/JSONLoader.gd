@@ -12,6 +12,6 @@ static func LoadJSON(filename):
 		print("Couldn't parse json file")
 		return false
 	if typeof(parsedJSON.result) != TYPE_DICTIONARY:
-		print("The JSON root object is not a map")
+		print("The JSON root object is not a object")
 		return false
 	return parsedJSON.result
