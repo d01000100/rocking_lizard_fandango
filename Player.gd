@@ -6,6 +6,9 @@ var JSONLoader
 
 onready var raycast = $RayCast2D
 
+# Reads the file "data.json" where the cowboy specification
+# are defined. For example, the speed in which the cowboy
+# moves.
 func initFromJSON():
 	JSONLoader = get_node("/root/JSONLoader")
 	var things = JSONLoader.LoadJSON("data.json")
@@ -26,7 +29,7 @@ func initFromJSON():
 
 func _ready():
 	yield(get_tree(), "idle_frame")
-	get_tree().call_group("zombies", "set_player", self)
+	get_tree().call_group("enemies", "set_player", self)
 	initFromJSON()
 
 func _physics_process(delta):

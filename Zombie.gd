@@ -7,7 +7,7 @@ onready var raycast = $RayCast2D
 var player = null
 
 func _ready():
-	add_to_group("zombies")
+	add_to_group("enemies")
 
 func _physics_process(delta):
 	if player == null:

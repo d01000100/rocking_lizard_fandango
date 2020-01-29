@@ -1,5 +1,9 @@
 extends Node
 
+# Reads "filename", parses it as a JSON and returns
+# the parsed values.
+# It checks if the root JSON node is an object.
+# Returns false on error
 static func LoadJSON(filename):
 	var dataFile = File.new()
 	if (dataFile.open("res://" + filename, File.READ) != OK):

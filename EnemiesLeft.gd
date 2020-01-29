@@ -11,10 +11,11 @@ func _ready():
 
 # "Observer". Has a global access to the scene and 
 # gets information of the whole scene
-func countZombies():
-	var enemies = get_tree().get_nodes_in_group("zombies")
+# Counts how many nodes are tagged as "enemies"
+func countEnemies():
+	var enemies = get_tree().get_nodes_in_group("enemies")
 	return enemies.size()
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	set_text("Enemies Left: " + str(countZombies()))
+	set_text("Enemies Left: " + str(countEnemies()))
