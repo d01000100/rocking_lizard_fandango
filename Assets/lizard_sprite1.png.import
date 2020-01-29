@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cowboy.png-568e2a32e15435453e399162eb6ab47a.stex"
+path="res://.import/lizard_sprite1.png-1ef392437be48d9fa87707e891aa98e0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cowboy.png"
-dest_files=[ "res://.import/cowboy.png-568e2a32e15435453e399162eb6ab47a.stex" ]
+source_file="res://Assets/lizard_sprite1.png"
+dest_files=[ "res://.import/lizard_sprite1.png-1ef392437be48d9fa87707e891aa98e0.stex" ]
 
 [params]
 
