@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://EnemyFactory.gd" type="Script" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://EnemiesLeft.gd" type="Script" id=3]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 1 )
@@ -10,3 +11,9 @@ script = ExtResource( 1 )
 position = Vector2( 522.331, 356.558 )
 rotation = -1.02778
 scale = Vector2( 0.801076, 0.801076 )
+
+[node name="EnemiesLeft" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_scale = Vector2( 8.407, 9.30442 )
+script = ExtResource( 3 )
