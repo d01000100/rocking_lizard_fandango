@@ -10,14 +10,15 @@
 script = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 522.331, 356.558 )
+position = Vector2( 875.341, 425.693 )
 rotation = -1.02778
 scale = Vector2( 0.801076, 0.801076 )
 
 [node name="EnemiesLeft" type="Label" parent="."]
-margin_right = 40.0
+margin_right = 66.0
 margin_bottom = 14.0
-rect_scale = Vector2( 8.407, 9.30442 )
+rect_scale = Vector2( 4.627, 2.574 )
+size_flags_horizontal = 0
 script = ExtResource( 3 )
 
 [node name="desert_background" type="Sprite" parent="."]
