@@ -27,6 +27,19 @@ func initFromJSON():
 		return false
 	return true
 
+# Switch to Fire Spite while shooting
+func ShowFireSpite():
+	$Sprite_idle.visible = false
+	$Sprite_fire.visible = true
+	$FireSpiteTimer.wait_time = 0.2
+	$FireSpiteTimer.start()
+
+# To check whether Fire Spite time is up
+func CheckFireSpiteTimer():
+	if $FireSpiteTimer.is_stopped():
+		$Sprite_idle.visible = true
+		$Sprite_fire.visible = false
+	
 func _ready():
 	yield(get_tree(), "idle_frame")
 	get_tree().call_group("enemies", "set_player", self)
@@ -48,10 +61,14 @@ func _physics_process(delta):
 	var look_vec = get_global_mouse_position() - global_position
 	global_rotation = atan2(look_vec.y, look_vec.x)
 	
+	CheckFireSpiteTimer()
+	
 	if Input.is_action_just_pressed("shoot"):
 		var coll = raycast.get_collider()
 		if raycast.is_colliding() and coll.has_method("kill"):
 			coll.kill()
+		ShowFireSpite()
+		
 
 func kill():
 	get_tree().reload_current_scene()
