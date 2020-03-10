@@ -3,6 +3,7 @@ extends KinematicBody2D
 var MOVE_SPEED = 300
 var SCALE = 1.0
 var JSONLoader
+var pipeline
 
 onready var raycast = $RayCast2D
 

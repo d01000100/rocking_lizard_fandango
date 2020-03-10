@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 JSONLoader="*res://Scripts/JSONLoader.gd"
+pipeline="*res://Scripts/pipeline.gd"
 
 [input]
 
