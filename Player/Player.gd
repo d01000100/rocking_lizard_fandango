@@ -11,7 +11,7 @@ onready var raycast = $RayCast2D
 # moves.
 func initFromJSON():
 	JSONLoader = get_node("/root/JSONLoader")
-	var things = JSONLoader.LoadJSON("data.json")
+	var things = JSONLoader.LoadJSON("config/player.json")
 	if (!things): 
 		print("Error reading JSON")
 		return false

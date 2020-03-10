@@ -3,7 +3,7 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var enemyScene = preload("res://Enemy.tscn")
+var enemyScene = preload("res://Enemy/Enemy.tscn")
 var JSONLoader
 
 # Enemy "Factory". It recieves a map with "x" and "y" values

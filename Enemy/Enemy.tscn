@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Enemy.gd" type="Script" id=1]
+[ext_resource path="res://Enemy/Enemy.gd" type="Script" id=1]
 [ext_resource path="res://Assets/lizard_sprite1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/lizard_sprite2.png" type="Texture" id=3]
 [ext_resource path="res://Assets/lizard_sprite3.png" type="Texture" id=4]
@@ -32,7 +32,6 @@ cast_to = Vector2( 50, 0 )
 rotation = 1.5708
 scale = Vector2( 2.20281, 2.20281 )
 frames = SubResource( 2 )
-frame = 5
 playing = true
 
 [node name="Timer" type="Timer" parent="."]
