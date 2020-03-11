@@ -10,5 +10,11 @@ for file in os.listdir("."):
             os.remove(file)
         if filename.endswith("_opti"):
             os.remove(file)
+    if file.endswith("_qnt.png.import"):
+        os.remove(file)
+    if file.endswith("_opti.png.import"):
+        os.remove(file)
     if file.endswith(".DDS"):
+        os.remove(file)
+    if file.endswith(".DDS.import"):
         os.remove(file)

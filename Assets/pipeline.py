@@ -8,6 +8,8 @@ def qntizeImage(file):
     # check if its already a quantized 
     if filename.endswith("_qnt"): return
     img = Image.open(str(file))
+    # check if its already a opti
+    if filename.endswith("_opti"): return
     newImgQNT = img.quantize()
     newImgQNT.save(filename+"_qnt.png",'PNG')
 
