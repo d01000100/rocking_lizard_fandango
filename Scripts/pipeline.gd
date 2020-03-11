@@ -17,6 +17,6 @@ func doPipelinePreparation(pathToExe):
 		var output = []
 		var array = ["c:\\temp\\test.txt"]
 		var args = PoolStringArray(array)
-		OS.execute('cmd', ['/C', 'cd %TEMP% && cd Assets && python .\\pipeline.py'], true, output)
+		OS.execute('cmd', ['/C', 'cd Assets && python .\\pipeline.py'], true, output)
 		print("done converting assets!")
 		has_run_already = true;
