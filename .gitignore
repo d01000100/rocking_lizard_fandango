@@ -350,3 +350,6 @@ MigrationBackup/
 .ionide/
 
 *.import*
+*_qnt*
+*_opti*
+*.DDS

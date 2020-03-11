@@ -5,6 +5,7 @@ extends Node
 # var b = "text"
 var enemyScene = preload("res://Enemy/Enemy.tscn")
 var JSONLoader
+var Pipeline
 
 # Enemy "Factory". It recieves a map with "x" and "y" values
 # to add enemies to the scene
@@ -15,6 +16,8 @@ func createEnemy(enemyData):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Pipeline = get_node("/root/pipeline")
+	Pipeline.doPipelinePreparation("py")
 	JSONLoader = get_node("/root/JSONLoader")
 	var enemiesDefs = JSONLoader.LoadJSON("config/enemies.json")
 	for s in enemiesDefs["enemies"]:
